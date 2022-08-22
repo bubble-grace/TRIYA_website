@@ -26,6 +26,13 @@
         .carousel-control-next{
             margin-right: 22%;
         }
+        .text-blue{
+            color: rgb(0,182,222) !important;
+        }
+        .text-navblue{
+            color: rgb(0,129,167) !important;
+        }
+
 
 
     </style>
@@ -57,7 +64,7 @@
         </ul>
     </div>
 </nav>
-<div class="fluid_container p-3 margin text-black text_center">
+<div class="fluid_container p-3 m-2 text-black text_center">
 <h3>Who are we?</h3>
 <p>TRIYA’s aim is to make sailing accesable to all school age students to encourage a love for the water and sailing. We run programs from beginner levels all the way to national champions.
 
@@ -66,7 +73,7 @@
 </p>
 </div>
 
-<div class="fluid_container p-3 margin">
+<div class="fluid_container p-3 m-2">
     <div class="col"></div>
     <div class="col">
         <div id="demo" class="carousel slide" data-bs-ride="carousel">
@@ -111,19 +118,19 @@
 </div>
 </div>
 
-<div class="fluid_container p-3 margin text-black text_center">
+<div class="fluid_container p-3 m-2 text-black text_center">
 <div class="row ">
-    <div class="col margin">
+    <div class="col margin text-blue">
         <h5>Learn to Sail</h5>
         </div>
-        <div class="col margin ">
+        <div class="col margin text-blue">
             <h5>Teams Sailing</h5></div>
-        <div class="col margin">
+        <div class="col margin text-blue">
             <h5>Fleet Racing</h5></div>
 </div>
 </div>
 
-<div class="fluid_container p-3 margin text-black text_center">
+<div class="fluid_container p-3 m-2 text-black text_center">
     <div class="row">
         <div class="col">
             <p>This is on weekdays from 4pm until 8pm and focuses on the basics of sailing learning how to tack, gybe, position in the boat and rigging. Currently this runs everyday after school apart from a Wednesday and is perfect for gaining confidence in and arround a 420 boat.</p>
@@ -139,31 +146,31 @@
 </div>
 
 
-<div class="col margin fluid_container">
+<div class="col m-2 fluid_container">
     <table class="table">
         <thead>
         <tr>
-            <th scope="col navblue">Costs</th>
-            <th scope="col">Learn to Sail</th>
-            <th scope="col">Teams Racing</th>
-            <th scope="col">Fleet Racing</th>
+            <th scope="col" class="text-navblue">Costs</th>
+            <th scope="col" class="text-navblue">Learn to Sail</th>
+            <th scope="col" class="text-navblue">Teams Racing</th>
+            <th scope="col" class="text-navblue">Fleet Racing</th>
         </tr>
         </thead>
         <tbody>
         <tr>
-            <th scope="row">Coaching fee</th>
+            <th scope="row" class="text-navblue">Coaching fee</th>
             <td>$190</td>
             <td>$170</td>
             <td>$300</td>
         </tr>
         <tr>
-            <th scope="row">Boat hire</th>
+            <th scope="row" class="text-navblue">Boat hire</th>
             <td>none</td>
             <td>none</td>
             <td>$125</td>
         </tr>
         <tr>
-            <th scope="row">Total</th>
+            <th scope="row" class="text-navblue">Total</th>
             <td>$190</td>
             <td>$170</td>
             <td>$425</td>
@@ -172,29 +179,29 @@
     </table>
 </div>
 
-<div class="col margin fluid_container">
+<div class="col m-2 fluid_container">
 <form>
     <div class="row">
         <label for="exampleFormControlInput1">Sailors Name</label>
         <p></p>
         <div class="col">
-            <input type="text" class="form-control text-blue" placeholder="First name">
+            <input type="text" class="form-control " placeholder="First name">
         </div>
         <div class="col">
-            <input type="text" class="form-control text-blue" placeholder="Last name">
+            <input type="text" class="form-control " placeholder="Last name">
         </div>
     </div>
     <div class="form-group">
         <p></p>
         <label for="exampleFormControlInput1" >Contact Email Address</label>
         <p></p>
-        <input type="email" class="form-control text-blue" id="exampleFormControlInput1" placeholder="name@example.com">
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
     </div>
     <div class="form-group">
         <p></p>
         <label for="exampleFormControlSelect1" >Please Select a Program</label>
         <p></p>
-        <select class="form-control text-blue" id="exampleFormControlSelect1">
+        <select class="form-control" id="exampleFormControlSelect1">
             <option>Learn to Sail (one term)</option>
             <option>Teams Racing (one term)</option>
             <option>Fleet Racing (one term with boat charter)</option>
@@ -265,5 +272,50 @@
         <div class="col-4">
         <img src="img/kite_reach.jpeg" alt="Kite reach" class="d-block w-100">
         </div>
+
+    <hr class="solid">
+    <div class="col-2 card fluid_container">
+        <img class="card-img-top p-3" src="img/opti.JPG" alt="Card image">
+        <div class="card-body">
+            <h4 class="card-title text-blue">Lockie</h4>
+            <p class="card-text">Lockie coaches all programs with a focus on fleet racing</p>
+        </div>
     </div>
+
+    <div class="col-2 card fluid_container">
+        <img class="card-img-top p-3 " src="img/downwind.jpeg" alt="Card image">
+        <div class="card-body">
+            <h4 class="card-title text-blue">Finn</h4>
+            <p class="card-text ">Finn coaches fleet racing and has attended Nationals and Worlds himself.</p>
+        </div>
+    </div>
+    <div class="col-2 card fluid_container" >
+        <img class="card-img-top p-3" src="img/roll_no_wind.jpeg" alt="Card image">
+        <div class="card-body">
+            <h4 class="card-title text-blue">Warren</h4>
+            <p class="card-text">Warren is the TRIYA manager, you will often find him helping out with programs and repairing boats</p>
+        </div>
+    </div>
+    <div class="col-2 card fluid_container">
+        <img class="card-img-top p-3 " src="img/inboat_upwind.jpeg" alt="Card image">
+        <div class="card-body">
+            <h4 class="card-title text-blue">Helena</h4>
+            <p class="card-text">Helena runs girls night and learn to sail, with a passion for introducing people to sailing</p>
+        </div>
+    </div>
+    <div class="col-2 card fluid_container">
+        <img class="card-img-top p-3 " src="img/ramp.JPG" alt="Card image">
+        <div class="card-body">
+            <h4 class="card-title text-blue">Darby</h4>
+            <p class="card-text">Darby coaches team racing, she raced herself and is passionate about introducing teams racing to others </p>
+        </div>
+    </div>
+            <div class="col-2 card fluid_container">
+                <img class="card-img-top p-3" src="img/upwind_rib.jpeg" alt="Card image">
+                <div class="card-body">
+                    <h4 class="card-title text-blue">Bri</h4>
+                    <p class="card-text">Bri coaches team and learn to sail, as a referee she knows the team racing scene well</p>
+                </div>
+            </div>
+</div>
 </div>
