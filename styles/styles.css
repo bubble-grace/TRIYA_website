@@ -1,0 +1,25 @@
+.blue{
+    background-color: rgb(0,182,222) !important;
+}
+.navblue{
+    background-color: rgb(0,129,167) !important;
+}
+.carousel-item img {
+    position: center;
+    margin: auto;
+    max-width: 45%;
+}
+.carousel-control-prev{
+    margin-left: 22%;
+
+}
+
+.carousel-control-next{
+    margin-right: 22%;
+}
+.text-blue{
+    color: rgb(0,182,222) !important;
+}
+.text-navblue{
+    color: rgb(0,129,167) !important;
+}
