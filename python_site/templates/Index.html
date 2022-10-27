@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends "main_template.html" %}
+{% block content %}
+
+<!--Quote in Red box, white text -->
+<div class="center " >
+    <div class="text-white-large">
+        <h3>"I come from the 49er, where there is a high error
+            rate in the sailing but the best sailor still wins, and
+            that’s why I’m attracted to these kind of boats.
+            "</h3>
+</div>
+</div>
+
+<!--Red text box -->
+<div class=" center">
+    <div class="row ">
+        <div class=" col-lg-8 col-md-12 text-blue">
+            <p>
+
+            </p>
+            <!--Who TRIYA is -->
+            <div class="text-navblue">
+                <h3>Who are we?</h3>
+            </div>
+            <div class="text-white">
+                <p>TRIYA’s aim is to make sailing accessible to all school age students to encourage a love for the water and sailing. We run programs from beginner levels all the way to national champions.
+
+                    There are three main programs more information can be found on the relevant pages however these descriptions will give a brief overview on what program may suit your sailor.
+                </p>
+            </div>
+        </div>
+        <!--Image -->
+        <div class=" col-lg-4 col-md-12">
+            <img src="{{url_for('static', filename='images/2_boat.jpg') }}" alt="Two downwind boast with sails up in Evans Bay" class="d-block w-100">
+        </div>
+</div>
+</div>
+<p>
+<!--Red text box -->
+</p>
+        <div class="fluid_container center">
+            <div class="row ">
+<!--Image -->
+                        <div class="col-lg-4 col-md-12">
+                            <img src="{{ url_for('static', filename='images/racing.jpeg') }}" alt="A 420 racing at weekly regatta" class="d-block w-100">
+                        </div>
+                <div class="col-lg-8 col-md-12 margin text-blue">
+                    <p>
+
+                    </p>
+                    <!--Text about 420 sailing-->
+                    <div class="text-navblue">
+                        <h3>420 Sailing</h3>
+                    </div>
+                    <div class="text-white">
+                        <p>420's are internationally recognised boats, as the younger sibling of the 470 an olympic class. They are great for learning
+                            a developing skills in two people boats and are the perfect stepping stone from smaller boats such as starlings or open skiffs.
+                        </p>
+                    </div>
+                </div>
+                    </div>
+                <p>
+
+                </p>
+
+            </div>
+<!--Carousal for coaches-->
+    <div class="container" style="max-width: 75%">
+        <div class="container-bg p-3" id="coaches"> <h2 class="text-coach" >Our Coaches</h2>
+        </div>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="30000">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-12">
+                            <div class="card container-bg card-border" >
+                                <img src="{{url_for('static', filename='images/opti.JPG') }}" class="card-img-top rounded-circle px-5 pt-3 " alt="Sailor in choppy water in a small Optimus">
+                                <div class="card-body">
+                                    <h2 class="text-coach">Lockie</h2>
+                                    <p class="main-para-sm text-center text-white">Lockie coaches all programs with a focus on fleet racing and crew,
+                                        teaching people how to use kites and trapezes</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12">
+                            <div class="card container-bg card-border" >
+                                <img src="{{url_for('static', filename='images/downwind.jpeg') }}" class="card-img-top rounded-circle px-5 pt-3 " alt="420 heading downwind with both crew and skipper hiking">
+                                <div class="card-body">
+                                    <h2 class="text-coach">Finn</h2>
+                                    <p class="main-para-sm text-center text-white">Finn coaches fleet racing and has attended Nationals and Worlds
+                                        himself and uses his experiences to help others</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12">
+                            <div class="card container-bg card-border" >
+                                <img src="{{url_for('static', filename='images/roll_no_wind.jpeg') }}" class="card-img-top rounded-circle px-5 pt-3 " alt="420 roll tacking in light winds">
+                                <div class="card-body">
+                                    <h2 class="text-coach">Warren</h2>
+                                    <p class="main-para-sm text-center text-white">Our TRIYA manager,
+                                        you will often find him helping out with programs, repairing boats and sometimes on a support boat</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="30000">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-12">
+                            <div class="card container-bg card-border" >
+                                <img src="{{url_for('static', filename='images/inboat_upwind.jpeg') }}" class="card-img-top rounded-circle px-5 pt-3 " alt="Sailors in 420 heading upwind and getting ready to power up">
+                                <div class="card-body">
+                                    <h2 class="text-coach">Helena</h2>
+                                    <p class="main-para-sm text-center text-white">Helena runs girls night and learn to sail,
+                                        with a passion for introducing new people to sailing</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12">
+                            <div class="card container-bg card-border" >
+                                <img src="{{url_for('static', filename='images/out_water_1.png') }}" class="card-img-top rounded-circle px-5 pt-3 " alt="Getting ready onshore at the boat shed in Evans Bay">
+                                <div class="card-body">
+                                    <h2 class="text-coach">Darby</h2>
+                                    <p class="main-para-sm text-center text-white">Darby coaches team racing and is passionate
+                                        about introducing teams racing to others</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12">
+                            <div class="card container-bg card-border" >
+                                <img src="{{url_for('static', filename='images/upwind_rib_1.png') }}" class="card-img-top rounded-circle px-5 pt-3 " alt="Taken from the rescue boat a choppy day with fast sailing">
+                                <div class="card-body">
+                                    <h2 class="text-coach">Bri</h2>
+                                    <p class="main-para-sm text-center text-white">Bri coaches team and learn to sail, as a referee she
+                                        knows the team racing scene well</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Arrows-->
+            <div class="text-center my-3">
+                <button class="btn-cls  d-inline-block btn-primary" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="fa fa-arrow-left" aria-hidden="true"></span>
+                    <span class="text-white">Previous</span>
+                </button>
+                <button class="btn-cls  d-inline-block btn-primary" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="fa fa-arrow-right" aria-hidden="true"></span>
+                    <span class="text-white">Next</span>
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+{% endblock %}
+
+

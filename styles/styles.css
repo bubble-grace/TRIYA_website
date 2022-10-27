@@ -5,46 +5,28 @@
 .navblue{
     background-color: rgb(0,129,167) !important;
 }
-
 .red-nav{
     background-color: red !important;
 }
 
-/*.carousel-item img {
-    position: center;
-    margin: auto;
-    max-width: 45%;
-}
 
-.carousel-control-prev{
-    margin-left: 22%;
-
-}
-
-.carousel-control-next{
-    margin-right: 22%;
-}
-
- */
 .text-blue{
     color: rgb(0,182,222) !important;
-    font-family: 'Righteous', cursive;
+    font-family: 'Poppins', sans-serif;
 }
 .text-navblue{
     color: rgb(0,129,167) !important;
-    font-family: 'Righteous', cursive;
+    font-family: 'Poppins', sans-serif;
 }
 .text-white{
     color: white;
-    font-family: 'Righteous', cursive;
+    font-family: 'Poppins', sans-serif;
+    padding: 5px;
 }
-td{
-    color: white;
-    font-family: 'Righteous', cursive;
-}
+
 .text-white-large{
     color: white;
-    font-family: 'Righteous', cursive;
+    font-family: 'Poppins', sans-serif;
     font-size: xxx-large;
     padding: 15px;
     margin: 15px;
@@ -60,12 +42,10 @@ td{
 }
 .center {
     position: center;
-    margin: auto;
     max-width: 75%;
-    margin-top: 10px;
+    margin: 10px auto auto;
     text-align: center;
     background-color: red;
-    font-family: 'Righteous', cursive;
 }
 .footer{
     background-color: rgb(0,129,167);
@@ -81,15 +61,7 @@ td{
 .back_col{
     background-color: rgb(197, 222, 242) !important;
 }
-.descripe {
-    position: center;
-    max-width: 75%;
-    margin: auto;
-    text-align: center;
-    background-color: red;
-    padding: 5px;
-    font-family: 'Righteous', cursive;
-}
+
 .bg-image {
      width: 100%;
      height: 307px;
@@ -100,7 +72,7 @@ td{
 .title {
     position:absolute;
     top:100%;
-    left:0%;
+    left:0;
     transform: translate(0,-100%);
     color: red;
     font-family: 'Righteous', cursive;
@@ -115,19 +87,38 @@ td{
 }
 .card-text {
     color: white;
+    margin: auto;
 }
 .text-red{
     color: red;
 }
+.iframe {
+    border-width: 0;
+}
+.row {
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+}
 .text-coach{
     color: rgb(0,129,167) !important;
-    font-family: 'Righteous', cursive;
+    font-family: 'Poppins', sans-serif;
     text-align: center;
 }
 @media screen and (max-width: 850px) {
 .title{
     font-size: 8em;
 }
+}
+
+@media screen and (max-width: 600px) {
+    .center{
+        max-width: 100%;
+    }
 }
 
 

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends "main_template.html" %}
+{% block content %}
+<!--Red information box-->
+<div class="center">
+    <div class="row ">
+        <div class=" col-lg-8 col-md-12 text-blue p-3">
+            <p>
+
+            </p>
+            <!--text learn to sail-->
+            <h5>Learn to Sail</h5>
+            <div class="text-white">
+                <p>This is on weekdays from 4pm until 8pm and focuses on the basics of sailing learning how to tack, gybe, position in the boat and rigging. Currently, this runs every day after school apart from a Wednesday and is perfect for gaining confidence in and around a 420 boat. If your sailor has raced another type of boat before or are new to sailing this is the course for them. </p>
+            </div>
+        </div>
+        <!--image-->
+        <div class="col-lg-4 col-md-12">
+            <img src="{{url_for('static', filename='images/set_up.JPG') }}" alt="Boats being set up outside Evans Bay" class="d-block w-100">
+        </div>
+    </div>
+</div>
+    <p>
+
+    </p>
+<!--Red information box-->
+    <div class="center ">
+        <div class="row ">
+            <!--Image-->
+        <div class="col-lg-4 col-md-12">
+            <img src="{{url_for('static', filename='images/ramp_1.png') }}" alt="420s coming in from a hard day of sailing up the ramp" class="d-block w-100">
+        </div>
+        <div class="col-lg-8 col-md-12 text-blue p-3">
+            <p>
+
+            </p>
+            <!--text teams sailing-->
+            <h5>Teams Sailing</h5>
+            <div class="text-white">
+                <p>This is for more experienced sailors who are interested in tactics, teams racing consists of 3 boats (2 people per boat) per team and two teams, they complete in a short course race(less than 15 minutes long). The team that wins is the one that gets the most amount of boats over the line first, TRIYA is aiming to have 3 teams compete in the regionals, 1 from Wellington College, 1 open team and 1 from Scots College.
+                </p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <p>
+
+    </p>
+<!--Red information box-->
+    <div class="center fluid_container">
+        <div class="row ">
+        <div class="col-lg-8 col-md-12 text-blue">
+            <p>
+
+            </p>
+            <!--text fleet racing-->
+            <h5>Fleet Racing</h5>
+            <div class="text-white">
+                <p>This is for sailors aiming to compete in Nationals in 2023 who are graduates of one of the sailing programs offered, each boats consists of a skipper and a crew. The crew will learn how to trapeze and mange a kite, and the skipper will be in charge of steering and controls to effect the main sail. Fleet racing sails on a Saturday with training in the morning and racing in the afternoon.
+                </p>
+            </div>
+        </div>
+            <!--Image-->
+        <div class="col-lg-4 col-md-12">
+            <img src="{{url_for('static', filename='images/racing.jpeg') }}" alt="A 420 racing at the Evans Bay Matariki regatta" class="d-block w-100">
+        </div>
+    </div>
+</div>
+<p>
+
+</p>
+<!--Table of costs-->
+<div class="center p-3">
+<div class="col m-2 ">
+    <table class="table text-white">
+        <thead>
+        <tr>
+            <th scope="col" class="text-blue">Costs</th>
+            <th scope="col" class="text-blue">Learn to Sail</th>
+            <th scope="col" class="text-blue">Teams Racing</th>
+            <th scope="col" class="text-blue">Fleet Racing</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="text-white">
+            <th scope="row" class="text-blue">Coaching fee</th>
+            <td>$190</td>
+            <td>$170</td>
+            <td>$300</td>
+
+        </tr>
+        <tr class="text-white">
+            <th scope="row" class="text-blue">Boat hire</th>
+            <td>none</td>
+            <td>none</td>
+            <td>$125</td>
+        </tr>
+        <tr class="text-white">
+            <th scope="row" class="text-blue">Total</th>
+            <td>$190</td>
+            <td>$170</td>
+            <td>$425</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</div>
+<p>
+
+</p>
+
+
+<!--Form-->
+<div class="center p-3">
+<div class="col m-2" >
+    <!--needed to connect to python-->
+        <form action="{{url_for('programs')}}" method="POST" class="needs-validation" novalidate>
+        <div class="row">
+            <label for="first" >Sailors Name</label>
+            <p></p>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="First name" id="first" name="First Name" value ="{{ firstname }}" required >
+                <div class ="valid-feedback"> Valid. </div>
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Last name" id="last" name="Last Name" value ="{{ lastname }}" required >
+                <div class ="valid-feedback"> Valid. </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <p></p>
+            <label for="exampleFormControlInput1" >Contact Email Address</label>
+            <p></p>
+            <input type="email" class="form-control" id="exampleFormControlInput1" name="Your Email" placeholder="name@example.com" value ="{{ email }}" required >
+            <div class ="valid-feedback"> Valid. </div>
+        </div>
+
+        <div class="form-group">
+            <p></p>
+            <label for="exampleFormControlSelect1" >Please Select a Program</label>
+            <p></p>
+            <select class="form-control" id="exampleFormControlSelect1" name="Program">
+                <option>Learn to Sail (one term)</option>
+                <option>Teams Racing (one term)</option>
+                <option>Fleet Racing (one term with boat charter)</option>
+            </select>
+            <div class ="valid-feedback"> Valid. </div>
+            <p></p>
+        </div>
+        <div class="form-group">
+            <p></p>
+            <label for="exampleFormControlInput2" >Phone Number of Sailor</label>
+            <p></p>
+            <input type="number" class="form-control" id="exampleFormControlInput2" name="Phone Number" placeholder="021 123 456 7890" value ="{{ number }}" required >
+            <div class ="valid-feedback"> Valid. </div>
+        </div>
+        <div class="form-group p-2">
+        <div class="form-check">
+            <label class="form-check-label">
+            <input type="checkbox" class="form-check-input" name="Swimming" id="swim" value ="{{ swim }}" >
+            My child can confidently swim 50m</label>
+            <div class ="valid-feedback"> Valid. </div>
+        <!--Submit button-->
+        </div>
+        <button type="submit" class="btn btn-primary" >Submit</button>
+        </div>
+
+    </form>
+</div>
+</div>
+    {% endblock %}
